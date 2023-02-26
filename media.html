@@ -7,37 +7,56 @@
     <title>Entrainment</title>
 </head>
 <body>
-    <h1>Media Elements Example</h1>
+    <h1>Media Elements</h1>
 
-	<h2>Video Example</h2>
-	<video controls>
-		<source src="example_video.mp4" type="video/mp4">
-		<source src="example_video.webm" type="video/webm">
-		<source src="example_video.ogv" type="video/ogg">
-		<embed src="example_video.swf" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360">
-		<track src="example_video_captions.vtt" kind="captions" label="English" srclang="en">
+	<h2>Video Library</h2>
+	<video autoplay muted>
+		<source src="video/sample-mp4-file.mp4" type="video/mp4">
+		<!-- <source src="video/file_example_WEBM_1280_3_6MB.webm" type="video/webm"> -->
+		<!-- <source src="video/sample_1280x720_surfing_with_audio.ogv" type="video/ogg"> -->
+		<!-- <embed src="video/sample_1280x720_surfing_with_audio.swf" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360"> -->
+		<!-- <track src="example_video_captions.vtt" kind="captions" label="English" srclang="en"> -->
+		
 		Your browser does not support the video tag.
+	</video><br><br>
+
+
+<h2>This video is on loop</h2>
+	<video controls loop preload="auto">
+		<source src="video/sample-mp4-file.mp4" type="video/mp4">
 	</video>
 
-	<h2>Audio Example</h2>
-	<audio controls>
-		<source src="example_audio.mp3" type="audio/mpeg">
-		<source src="example_audio.ogg" type="audio/ogg">
+
+
+<h2>This video is with thumbnail</h2>
+
+<video controls poster="video/jungle.jpg" style="height: 240px; width: 320px;">
+
+	<source src="video/sample-mp4-file.mp4" type="video/mp4">
+
+</video>
+
+<h2>This Video has subtitle</h2>
+<video controls>
+	<source src="video/upc-tobymanley.theora (1).ogg" type="video/ogg">
+	<track src="video/upc-video-subtitles-en.vtt" label="English" kind="captions" srclang="en" default>
+</video>
+
+
+
+
+	<h2>Audio Library</h2>
+	<audio  controls autoplay >
+		<source src="video/file_example_MP3_2MG.mp3" type="audio/mpeg">
+		<!-- <source src="example_audio.ogg" type="audio/ogg">
 		<source src="example_audio.wav" type="audio/wav">
-		<embed src="example_audio.swf" type="application/x-shockwave-flash" allowfullscreen="true" width="400" height="27">
+		<embed src="example_audio.swf" type="application/x-shockwave-flash" allowfullscreen="true" width="400" height="27"> -->
 		Your browser does not support the audio tag.
 	</audio>
 
-	<h2>Embedded Example</h2>
-	<embed src="example.swf" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360">
+	<!-- <h2>Embedded Example</h2> -->
+	<!-- <embed src="example.swf" type="application/x-shockwave-flash" allowfullscreen="true" width="640" height="360"> -->
 	
-	<h2>Track Example</h2>
-	<video controls>
-		<source src="example_video.mp4" type="video/mp4">
-		<source src="example_video.webm" type="video/webm">
-		<source src="example_video.ogv" type="video/ogg">
-		<track src="example_video_captions.vtt" kind="captions" label="English" srclang="en">
-		Your browser does not support the video tag.
-	</video>
+	
 </body>
 </html>
